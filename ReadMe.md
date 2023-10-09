@@ -1,3 +1,6 @@
+# TODO
+Je suis en train faire de belles fonctions pour éviter la répétition du code
+
 # Projet de Machine Learning
 
 Ce projet est un exemple d'application d'un modèle de Machine Learning pour reconnaître des visages.
@@ -20,8 +23,12 @@ pip install matplotlib
 2. Clonez le dépôt :
 
 ```
-git clone https://github.com/[votre-nom]/[nom-du-projet].git
+git clone https://github.com/nathanouillle/face_recognition.git
 ```
+
+3. Récupérez les données :
+
+Récupérez les *test_images* et *train_images* sur http://www.duffner-net.de et sauvegardez les dossiers dans le dossier **face_recognition**
 
 
 ## Utilisation
@@ -48,3 +55,4 @@ Dans la troisième partie, le modèle est évalué sur un ensemble de données d
 
 * [Pytorch](https://pytorch.org/)
 * [Matplotlib](https://matplotlib.org/)
+* [Stephan Dufner](http://www.duffner-net.de)
