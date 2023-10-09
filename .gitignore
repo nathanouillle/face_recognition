@@ -1,0 +1,8 @@
+# Ignore Python __pycache__ folders
+__pycache__/
+
+# Ignore test_images folder
+test_images/
+
+# Ignore train_images folder
+train_images/
