@@ -1,5 +1,16 @@
-# TODO
-Je suis en train faire de belles fonctions pour éviter la répétition du code
+# Remarque
+Pour l'instant j'ai trouvé un modèle very good avec:
+* Adam, lr=0.0001 sans weight_decay
+* Data Augmentation
+* dropout p=0.5
+* Ajout de kernels à l'architecture
+
+
+| Accuracy for class: noface is 86.3 % |
+| Accuracy for class: face  is 84.2 % |
+
+
+Augmenter le nombre d'epochs (actuellement à 3) et sûrement faire du early stopping pour atteindre le 90%
 
 # Projet de Machine Learning
 
