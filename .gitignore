@@ -1,5 +1,6 @@
 # Ignore Python __pycache__ folders
 __pycache__/
+.vscode/
 
 # Ignore test_images folder
 test_images/
