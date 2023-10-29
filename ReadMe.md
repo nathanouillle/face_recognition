@@ -1,17 +1,3 @@
-# Remarque
-Pour l'instant j'ai trouvé un modèle very good avec:
-* Adam, lr=0.0001 sans weight_decay
-* Data Augmentation
-* dropout p=0.5
-* Ajout de kernels à l'architecture
-
-
-| Accuracy for class: noface is 86.3 % |
-| Accuracy for class: face  is 84.2 % |
-
-
-Augmenter le nombre d'epochs (actuellement à 3) et sûrement faire du early stopping pour atteindre le 90%
-
 # Projet de Machine Learning
 
 Ce projet est un exemple d'application d'un modèle de Machine Learning pour reconnaître des visages.
@@ -44,9 +30,17 @@ Récupérez les *test_images* et *train_images* sur http://www.duffner-net.de et
 
 ## Utilisation
 
-Pour exécuter le projet, ouvrez un notebook Jupyter dans le répertoire du projet.
+Pour exécuter le projet, ouvrez les notebooks Jupyter dans le répertoire du projet.
 
-Le notebook `main.ipynb` contient le code pour entraîner et évaluer le modèle.
+* Le notebook `main.ipynb` contient le déroulement de la construction, entraînement et vérification du modèle de détection de visages.
+
+* `net.py` est l'architecture du réseau de neurones.
+
+* `model.pth` est le réseau de neurones entrainé pour reconnaitre les visages.
+
+* Le notebook `sliding_window.ipynb` contient le code de l'utilisation du dit modèle sur une image.
+
+* Le dossier `images_sliding_window` contient des exemples d'images sur lequels le sliding window peut être utilisé.
 
 ## Explication du code
 
@@ -61,6 +55,20 @@ Dans la première partie, les données sont importées, transformées et sépar�
 Dans la deuxième partie, le modèle est entraîné sur les données.
 
 Dans la troisième partie, le modèle est évalué sur un ensemble de données de test.
+
+---
+
+Le code du notebook `sliding_window.ipynb` est divisé en trois parties principales :
+
+* **Choix des paramètres**
+* **Sliding Window**
+* **NMS**
+
+Dans la première partie, les paramètres pertinents du sliding window sont définis.
+
+Dans la deuxième partie, le l'importation du modèle, transformation de l'image, définition et utilisation du sliding window.
+
+Dans la troisième partie, application du NMS sur les résultats obtenus.
 
 ## Références
 
